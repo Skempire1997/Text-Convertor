@@ -30,6 +30,9 @@ body{
 
 }
 textarea{
+    font-size: 20px;
+    width: 350px;
+    height: 150px;
    border-radius: 30px;
    overflow: hidden;
    padding: 10px;
@@ -73,14 +76,23 @@ h4{
 
 }
 .underline{
-    text-decoration: underline;
+    text-decoration: 1px underline;
 }
 .linethrough{
     text-decoration: line-through;
+    font-style: oblique;
 }
 .bold{
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
 }
 .italic{
-    text-decoration: revert;
+    font-style: italic;
+}
+.font1{
+    font: sans-serif;
+}
+.clear{
+    text-decoration: none;
+    font-style: none;
 }

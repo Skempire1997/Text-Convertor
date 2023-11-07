@@ -16,9 +16,31 @@ function upperCase(){
 function lowerCase(){
     userText.value = userText.value.toLowerCase();
 }
-function search(){
-    
+function bold(){
+    let userText = document.getElementById("userText")
+    userText.setAttribute('class','bold');
 }
 function underLine(){
-    userText.value = userText.value.toLowerCase();
+    let userText = document.getElementById("userText")
+    userText.setAttribute('class','underline');
+
+}
+function italic(){
+    let userText = document.getElementById("userText")
+    userText.setAttribute('class','italic');
+}
+function font1(){
+    let userText = document.getElementById("userText")
+    userText.setAttribute('class','font1');
+}
+
+function lineThrough(){
+     let userText = document.getElementById("userText")
+    userText.setAttribute('class','linethrough');
+}
+
+function clear(){
+    let userText = document.getElementById("userText")
+    userText.setAttribute('class','clear');
+
 }

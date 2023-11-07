@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="Text-Convorter.css">
-    <style>
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="Text-Convorter.css">
 </head>
 <body>
     <div class="textbox">
       <div align="center">
          <form>
-            <label for=""><h2>Enter Text</h2></label>
+            
             <textarea 
                name="=text"
                id="userText"
                cols="40"
                rows="10"
+               placeholder="Enter the Text." 
                onchange="fetchData()"
             ></textarea>
             <button type="button" onclick="upperCase()">UPPERCASE</button>
-            <button type="button" onclick="lowerCase()">LOWERCASE</button>
+            <button type="button" onclick="lowerCase()">lowercase</button>
             <button onclick="search()">SEARCH</button>
+            <button type="button" onclick="underLine()" style="text-decoration: underline;">UnderLine</button>
+            <button type="button" onclick="lowerCase()" style="text-decoration: line-through;">Linethrough</button>
+            <button type="button" onclick="search()" ><i>Italic</i></button>
+            <button type="button" onclick="upperCase()"><b>Bold</b></button>
+            <button type="button" onclick="lowerCase()">Color</button>
+            <button type="button" onclick="search()">Size</button>
          </form>  
-         <h3>
-            text contains <span id="words"></span> words and 
-            <span id="characters"></span> characters
-         </h3>
+         <div class="count">
+        <h4>Text contains <span id="words"></span> words and 
+            <span id="characters"></span> characters.
+         </h4>
+         </div>
       </div>
     </div>
     <script src="Text.js"></script>

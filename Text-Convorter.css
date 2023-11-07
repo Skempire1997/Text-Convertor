@@ -1,21 +1,86 @@
+body{
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+}
 .textbox{
     position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(to right,rgb(139, 103, 202),rgb(79, 162, 193));
+    top: 20%;
+    left: 35%;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px white;
+    background-size: cover;
+    background: transparent;
+    color: white;
+
 }
-.textbox{
-    height: 300px;
-    width: 300px;
-    background-color: greenyellow;
-    padding: 30px;
+@keyframes text{
+    10%{background-image: url(https://wallpapercave.com/wp/wp3624224.jpg)}
+    40%{background-image: url(https://wallpapercave.com/wp/wp2310215.jpg)}
+    70%{background-image: url(https://wallpapercave.com/wp/wp2310205.jpg)}
+    100%{background-image: url(https://i.pinimg.com/originals/9f/9a/48/9f9a48d80599fe38f8a730b1e3d86de0.jpg)}
+
 }
+textarea{
+   border-radius: 30px;
+   overflow: hidden;
+   padding: 10px;
+}
+
 button{
-    margin-left: 10px;
-    margin-top: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    width: 92px;
+    height: 25px;
+    align-items: center;
+    background-color: orange;
+    border-radius: 10px;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    text-decoration: underline;
+    box-shadow: 0px 0px 10px floralwhite;
+    color: white;
+}
+.count{
+    background-color: black;
+}
+h4{
+    color: blue;
+    animation-name:mark ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    margin-bottom: 0px;
+}
+@keyframes mark{
+    20%{text-shadow: 0px 0px 10px floralwhite;transform: scale(1.1);}
+    40%{text-shadow: 0px 0px 20px indianred;}
+    60%{text-shadow: 0px 0px 40px lightyellow;}
+    80%{text-shadow: 0px 0px 50px blue;}
+
+}
+.underline{
+    text-decoration: underline;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+.bold{
+    font-weight: bolder;
+}
+.italic{
+    text-decoration: revert;
 }

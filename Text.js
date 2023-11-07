@@ -16,3 +16,9 @@ function upperCase(){
 function lowerCase(){
     userText.value = userText.value.toLowerCase();
 }
+function search(){
+    
+}
+function underLine(){
+    userText.value = userText.value.toLowerCase();
+}

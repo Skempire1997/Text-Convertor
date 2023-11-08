@@ -38,6 +38,10 @@ function lineThrough(){
      let userText = document.getElementById("userText")
     userText.setAttribute('class','linethrough');
 }
+function color(){
+     let userText = document.getElementById("userText")
+    userText.setAttribute('class','color1');
+}
 
 function clear(){
     let userText = document.getElementById("userText")

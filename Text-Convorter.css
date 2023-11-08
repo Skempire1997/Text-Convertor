@@ -23,6 +23,7 @@ body{
 
 }
 @keyframes text{
+    0%{background-image: url(https://wallpapercave.com/wp/wp3624224.jpg)}
     10%{background-image: url(https://wallpapercave.com/wp/wp3624224.jpg)}
     40%{background-image: url(https://wallpapercave.com/wp/wp2310215.jpg)}
     70%{background-image: url(https://wallpapercave.com/wp/wp2310205.jpg)}
@@ -95,4 +96,7 @@ h4{
 .clear{
     text-decoration: none;
     font-style: none;
+}
+.color1{
+    color: indianred;
 }
